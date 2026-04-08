@@ -54,11 +54,12 @@
 
 <style>
 	.term {
-		padding: 14px;
-		font-family: 'SF Mono', Menlo, Monaco, Consolas, monospace;
-		font-size: 12px;
-		line-height: 1.55;
+		padding: 16px 18px;
+		font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+		font-size: 11.5px;
+		line-height: 1.65;
 		min-height: 220px;
+		font-feature-settings: 'calt', 'liga';
 	}
 	.row {
 		white-space: pre;
