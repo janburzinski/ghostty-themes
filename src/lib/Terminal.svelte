@@ -54,20 +54,32 @@
 
 <style>
 	.term {
+		width: 100%;
+		box-sizing: border-box;
 		padding: 16px 18px;
-		font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+		font-family: 'Geist Mono', 'SF Mono', Menlo, monospace;
 		font-size: 11.5px;
 		line-height: 1.65;
-		min-height: 220px;
-		font-feature-settings: 'calt', 'liga';
+		font-feature-settings: 'calt' 0, 'liga' 0;
+		font-variant-ligatures: none;
+		overflow: hidden;
 	}
 	.row {
 		white-space: pre;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	@media (max-width: 420px) {
+		.term {
+			padding: 14px;
+			font-size: 10.5px;
+		}
 	}
 	.swatches {
+		width: 100%;
 		display: grid;
 		grid-template-columns: repeat(16, 1fr);
-		height: 6px;
+		height: 3px;
 	}
 	.swatches div {
 		height: 100%;
